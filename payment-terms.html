@@ -15,7 +15,8 @@
 	<link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 	<link rel="stylesheet" href="assets/css/magnific-popup.css">
 	<link rel="stylesheet" href="assets/css/meanmenu.min.css">
-	<link rel="stylesheet" href="assets/sass/style.css"> 
+	<link rel="stylesheet" href="assets/sass/style.css">
+	<link rel="stylesheet" href="assets/css/mobile-fixes.css"> 
 	
 	<style>
 		@keyframes float {
@@ -209,81 +210,179 @@
                 <div class="col-xl-12">
 					<div class="services__details-left">
 						<div class="services__details-left-content">
-							<h2>Payment Terms</h2>
+							<h2 style="text-align: center; color: #008080; margin-bottom: 30px;">Payment Terms</h2>
                             
-<div class="services__details-left-content-box" style="background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%); color: white; padding: 25px; border-radius: 10px; margin: 30px 0;">
-    <h4 style="color: white; margin-bottom: 15px;">1. General Terms</h4>
-    <p style="color: rgba(255,255,255,0.9); line-height: 1.8;">By engaging with 1 Roof Ads, the client agrees to the following payment terms related to digital marketing, website development, Bulk SMS, Social Media, SEO, GMB management, WhatsApp API setup, and related services.</p>
-</div>
+							<!-- Accordion Container -->
+							<div class="accordion" id="paymentTermsAccordion" style="margin-top: 30px;">
+								
+								<!-- Accordion Item 1 -->
+								<div class="accordion-item" style="border: 1px solid #008080; border-radius: 10px; margin-bottom: 0; overflow: hidden;">
+									<h2 class="accordion-header" id="heading1">
+										<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1" style="background: #008080; color: white; border: none; padding: 20px; font-weight: 600; font-size: 16px;">
+											<i class="fas fa-file-contract" style="margin-right: 10px;"></i>
+											1. General Terms
+										</button>
+									</h2>
+									<div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#paymentTermsAccordion">
+										<div class="accordion-body" style="background: rgba(0, 128, 128, 0.05); padding: 25px; color: #333; line-height: 1.8;">
+											<p>By engaging with 1 Roof Ads, the client agrees to the following payment terms related to digital marketing, website development, Bulk SMS, Social Media, SEO, GMB management, WhatsApp API setup, and related services.</p>
+										</div>
+									</div>
+								</div>
 
-<div class="services__details-left-content-box" style="background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #667eea 100%); color: white; padding: 25px; border-radius: 10px; margin: 30px 0;">
-    <h4 style="color: white; margin-bottom: 15px;">2. Advance Payment</h4>
-    <ul style="color: rgba(255,255,255,0.9); padding-left: 20px;">
-        <li>A minimum of <strong>50% advance</strong> is required before the commencement of any project or service.</li>
-        <li>For services like Bulk SMS, WhatsApp API, or Paid Ads, <strong>100% advance payment</strong> is required.</li>
-    </ul>
-</div>
+								<!-- Accordion Item 2 -->
+								<div class="accordion-item" style="border: 1px solid #008080; border-radius: 10px; margin-bottom: 0; overflow: hidden;">
+									<h2 class="accordion-header" id="heading2">
+										<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2" style="background: #008080; color: white; border: none; padding: 20px; font-weight: 600; font-size: 16px;">
+											<i class="fas fa-money-check-alt" style="margin-right: 10px;"></i>
+											2. Advance Payment
+										</button>
+									</h2>
+									<div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#paymentTermsAccordion">
+										<div class="accordion-body" style="background: rgba(0, 128, 128, 0.05); padding: 25px; color: #333; line-height: 1.8;">
+											<ul style="padding-left: 20px;">
+												<li>A minimum of <strong style="color: #008080;">50% advance</strong> is required before the commencement of any project or service.</li>
+												<li>For services like Bulk SMS, WhatsApp API, or Paid Ads, <strong style="color: #008080;">100% advance payment</strong> is required.</li>
+											</ul>
+										</div>
+									</div>
+								</div>
 
-<div class="services__details-left-content-box" style="background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%); color: white; padding: 25px; border-radius: 10px; margin: 30px 0;">
-    <h4 style="color: white; margin-bottom: 15px;">3. Payment Methods</h4>
-    <p style="color: rgba(255,255,255,0.9); line-height: 1.8;">We accept payments via:</p>
-    <ul style="color: rgba(255,255,255,0.9); padding-left: 20px;">
-        <li><strong>UPI / QR Code</strong></li>
-        <li><strong>Bank Transfer (NEFT/IMPS)</strong></li>
-        <li><strong>Cash</strong> (in limited cases with receipt)</li>
-        <li><strong>Cheque</strong> (subject to clearance)</li>
-    </ul>
-    <p style="color: rgba(255,255,255,0.9); line-height: 1.8; margin-top: 15px;">Bank details will be shared on the invoice or official communication.</p>
-</div>
+								<!-- Accordion Item 3 -->
+								<div class="accordion-item" style="border: 1px solid #008080; border-radius: 10px; margin-bottom: 0; overflow: hidden;">
+									<h2 class="accordion-header" id="heading3">
+										<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3" style="background: #008080; color: white; border: none; padding: 20px; font-weight: 600; font-size: 16px;">
+											<i class="fas fa-credit-card" style="margin-right: 10px;"></i>
+											3. Payment Methods
+										</button>
+									</h2>
+									<div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#paymentTermsAccordion">
+										<div class="accordion-body" style="background: rgba(0, 128, 128, 0.05); padding: 25px; color: #333; line-height: 1.8;">
+											<p>We accept payments via:</p>
+											<ul style="padding-left: 20px;">
+												<li><strong style="color: #008080;">UPI / QR Code</strong></li>
+												<li><strong style="color: #008080;">Bank Transfer (NEFT/IMPS)</strong></li>
+												<li><strong style="color: #008080;">Cash</strong> (in limited cases with receipt)</li>
+												<li><strong style="color: #008080;">Cheque</strong> (subject to clearance)</li>
+											</ul>
+											<p style="margin-top: 15px;">Bank details will be shared on the invoice or official communication.</p>
+										</div>
+									</div>
+								</div>
 
-<div class="services__details-left-content-box" style="background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #667eea 100%); color: white; padding: 25px; border-radius: 10px; margin: 30px 0;">
-    <h4 style="color: white; margin-bottom: 15px;">4. Balance Payment</h4>
-    <p style="color: rgba(255,255,255,0.9); line-height: 1.8;">The remaining 50% balance must be cleared:</p>
-    <ul style="color: rgba(255,255,255,0.9); padding-left: 20px;">
-        <li><strong>Upon project completion</strong> (website/design services), before final delivery or live deployment.</li>
-        <li><strong>On a monthly/renewal basis</strong> for recurring services like SEO, ads, or API usage.</li>
-    </ul>
-</div>
+								<!-- Accordion Item 4 -->
+								<div class="accordion-item" style="border: 1px solid #008080; border-radius: 10px; margin-bottom: 0; overflow: hidden;">
+									<h2 class="accordion-header" id="heading4">
+										<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4" style="background: #008080; color: white; border: none; padding: 20px; font-weight: 600; font-size: 16px;">
+											<i class="fas fa-balance-scale" style="margin-right: 10px;"></i>
+											4. Balance Payment
+										</button>
+									</h2>
+									<div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#paymentTermsAccordion">
+										<div class="accordion-body" style="background: rgba(0, 128, 128, 0.05); padding: 25px; color: #333; line-height: 1.8;">
+											<p>The remaining 50% balance must be cleared:</p>
+											<ul style="padding-left: 20px;">
+												<li><strong style="color: #008080;">Upon project completion</strong> (website/design services), before final delivery or live deployment.</li>
+												<li><strong style="color: #008080;">On a monthly/renewal basis</strong> for recurring services like SEO, ads, or API usage.</li>
+											</ul>
+										</div>
+									</div>
+								</div>
 
-<div class="services__details-left-content-box" style="background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%); color: white; padding: 25px; border-radius: 10px; margin: 30px 0;">
-    <h4 style="color: white; margin-bottom: 15px;">5. Late Payments</h4>
-    <ul style="color: rgba(255,255,255,0.9); padding-left: 20px;">
-        <li>A late fee of <strong>2% per week</strong> may be applied for overdue payments.</li>
-        <li>Services may be <strong>paused or suspended</strong> if payment is delayed beyond 10 days.</li>
-    </ul>
-</div>
+								<!-- Accordion Item 5 -->
+								<div class="accordion-item" style="border: 1px solid #008080; border-radius: 10px; margin-bottom: 0; overflow: hidden;">
+									<h2 class="accordion-header" id="heading5">
+										<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5" style="background: #008080; color: white; border: none; padding: 20px; font-weight: 600; font-size: 16px;">
+											<i class="fas fa-clock" style="margin-right: 10px;"></i>
+											5. Late Payments
+										</button>
+									</h2>
+									<div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#paymentTermsAccordion">
+										<div class="accordion-body" style="background: rgba(0, 128, 128, 0.05); padding: 25px; color: #333; line-height: 1.8;">
+											<ul style="padding-left: 20px;">
+												<li>A late fee of <strong style="color: #008080;">2% per week</strong> may be applied for overdue payments.</li>
+												<li>Services may be <strong style="color: #008080;">paused or suspended</strong> if payment is delayed beyond 10 days.</li>
+											</ul>
+										</div>
+									</div>
+								</div>
 
-<div class="services__details-left-content-box" style="background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #667eea 100%); color: white; padding: 25px; border-radius: 10px; margin: 30px 0;">
-    <h4 style="color: white; margin-bottom: 15px;">6. Refund Policy</h4>
-    <ul style="color: rgba(255,255,255,0.9); padding-left: 20px;">
-        <li><strong>No refunds</strong> on completed work, digital services, or subscription-based services.</li>
-        <li>Refunds are only applicable if agreed upon in writing before project commencement.</li>
-    </ul>
-</div>
+								<!-- Accordion Item 6 -->
+								<div class="accordion-item" style="border: 1px solid #008080; border-radius: 10px; margin-bottom: 0; overflow: hidden;">
+									<h2 class="accordion-header" id="heading6">
+										<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6" style="background: #008080; color: white; border: none; padding: 20px; font-weight: 600; font-size: 16px;">
+											<i class="fas fa-undo-alt" style="margin-right: 10px;"></i>
+											6. Refund Policy
+										</button>
+									</h2>
+									<div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#paymentTermsAccordion">
+										<div class="accordion-body" style="background: rgba(0, 128, 128, 0.05); padding: 25px; color: #333; line-height: 1.8;">
+											<ul style="padding-left: 20px;">
+												<li><strong style="color: #008080;">No refunds</strong> on completed work, digital services, or subscription-based services.</li>
+												<li>Refunds are only applicable if agreed upon in writing before project commencement.</li>
+											</ul>
+										</div>
+									</div>
+								</div>
 
-<div class="services__details-left-content-box" style="background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%); color: white; padding: 25px; border-radius: 10px; margin: 30px 0;">
-    <h4 style="color: white; margin-bottom: 15px;">7. GST & Invoicing</h4>
-    <ul style="color: rgba(255,255,255,0.9); padding-left: 20px;">
-        <li>All payments are subject to applicable <strong>GST</strong> as per government norms.</li>
-        <li>Official invoices will be provided for each payment made.</li>
-    </ul>
-</div>
+								<!-- Accordion Item 7 -->
+								<div class="accordion-item" style="border: 1px solid #008080; border-radius: 10px; margin-bottom: 0; overflow: hidden;">
+									<h2 class="accordion-header" id="heading7">
+										<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7" style="background: #008080; color: white; border: none; padding: 20px; font-weight: 600; font-size: 16px;">
+											<i class="fas fa-receipt" style="margin-right: 10px;"></i>
+											7. GST & Invoicing
+										</button>
+									</h2>
+									<div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7" data-bs-parent="#paymentTermsAccordion">
+										<div class="accordion-body" style="background: rgba(0, 128, 128, 0.05); padding: 25px; color: #333; line-height: 1.8;">
+											<ul style="padding-left: 20px;">
+												<li>All payments are subject to applicable <strong style="color: #008080;">GST</strong> as per government norms.</li>
+												<li>Official invoices will be provided for each payment made.</li>
+											</ul>
+										</div>
+									</div>
+								</div>
 
-<div class="services__details-left-content-box" style="background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #667eea 100%); color: white; padding: 25px; border-radius: 10px; margin: 30px 0;">
-    <h4 style="color: white; margin-bottom: 15px;">8. Renewals & Subscriptions</h4>
-    <ul style="color: rgba(255,255,255,0.9); padding-left: 20px;">
-        <li>Clients will be notified prior to service renewal dates.</li>
-        <li>Failure to renew services on time may result in temporary suspension or termination.</li>
-    </ul>
-</div>
+								<!-- Accordion Item 8 -->
+								<div class="accordion-item" style="border: 1px solid #008080; border-radius: 10px; margin-bottom: 0; overflow: hidden;">
+									<h2 class="accordion-header" id="heading8">
+										<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8" style="background: #008080; color: white; border: none; padding: 20px; font-weight: 600; font-size: 16px;">
+											<i class="fas fa-sync-alt" style="margin-right: 10px;"></i>
+											8. Renewals & Subscriptions
+										</button>
+									</h2>
+									<div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8" data-bs-parent="#paymentTermsAccordion">
+										<div class="accordion-body" style="background: rgba(0, 128, 128, 0.05); padding: 25px; color: #333; line-height: 1.8;">
+											<ul style="padding-left: 20px;">
+												<li>Clients will be notified prior to service renewal dates.</li>
+												<li>Failure to renew services on time may result in temporary suspension or termination.</li>
+											</ul>
+										</div>
+									</div>
+								</div>
 
-<div class="services__details-left-content-box" style="background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%); color: white; padding: 25px; border-radius: 10px; margin: 30px 0;">
-    <h4 style="color: white; margin-bottom: 15px;">9. Contact for Payment Support</h4>
-    <p style="color: rgba(255,255,255,0.9); line-height: 1.8;">For billing, invoicing, or payment-related queries, contact:</p>
-    <div style="margin-top: 15px;">
-        <p style="color: rgba(255,255,255,0.9);"><i class="fas fa-phone" style="margin-right: 10px;"></i><strong>Phone:</strong> +91 9802378786</p>
-    </div>
-</div>
+								<!-- Accordion Item 9 -->
+								<div class="accordion-item" style="border: 1px solid #008080; border-radius: 10px; margin-bottom: 0; overflow: hidden;">
+									<h2 class="accordion-header" id="heading9">
+										<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9" style="background: #008080; color: white; border: none; padding: 20px; font-weight: 600; font-size: 16px;">
+											<i class="fas fa-phone" style="margin-right: 10px;"></i>
+											9. Contact for Payment Support
+										</button>
+									</h2>
+									<div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9" data-bs-parent="#paymentTermsAccordion">
+										<div class="accordion-body" style="background: rgba(0, 128, 128, 0.05); padding: 25px; color: #333; line-height: 1.8;">
+											<p style="margin-bottom: 15px;">For billing, invoicing, or payment-related queries, contact:</p>
+											<div style="margin-top: 15px;">
+												<p style="margin-bottom: 8px; line-height: 1.6;"><i class="fas fa-phone" style="margin-right: 10px; color: #008080;"></i><strong>Phone:</strong> +919802378786</p>
+												<p style="margin-bottom: 8px; line-height: 1.6;"><i class="fas fa-mobile-alt" style="margin-right: 10px; color: #008080;"></i><strong>Mobile:</strong> +917027798023</p>
+												<p style="margin-bottom: 8px; line-height: 1.6;"><i class="fas fa-envelope" style="margin-right: 10px; color: #008080;"></i><strong>Email:</strong> 1roofadsindia@gmail.com</p>
+												<p style="line-height: 1.6;"><i class="fas fa-globe" style="margin-right: 10px; color: #008080;"></i><strong>Website:</strong> www.1roofads.com</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
 
 						</div>
 					</div>
@@ -358,7 +457,7 @@
 						<div class="footer__two-widget-about">
 							<h4 style="color: white; margin-bottom: 20px;">About Us</h4>
 							<p style="color: rgba(255,255,255,0.9); line-height: 1.8;">1 ROOF ADS is a leading digital marketing agency in India, specializing in comprehensive digital solutions that drive real business growth. We help businesses establish strong online presence and achieve measurable results.</p>
-							<h6 style="color: white; margin-bottom: 15px;">Follow Us</h6>
+							<h6 style="color: white; margin-bottom: 0;">Follow Us</h6>
 							<div class="footer__two-widget-about-social">
 								<ul>
 									<li><a href="https://www.facebook.com/profile.php?id=100093546087763" target="_blank"><i class="fab fa-facebook-f"></i><span>Facebook</span></a></li>

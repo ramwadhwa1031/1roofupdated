@@ -37,17 +37,28 @@
 	<!-- Mean Menu CSS -->
 	<link rel="stylesheet" href="assets/css/meanmenu.min.css">
 	<!-- Custom CSS -->
-	<link rel="stylesheet" href="assets/sass/style.css"> 
+	<link rel="stylesheet" href="assets/sass/style.css">
+	<link rel="stylesheet" href="assets/css/mobile-fixes.css"> 
 	
 	<!-- Footer Animation CSS -->
 	<style>
+		/* Logo-based unified color variables */
+		:root {
+			--primary-teal: #008080;
+			--primary-accent: #ff6b6b;
+			--dark-teal: #006666;
+			--light-teal: #20b2aa;
+			--mint-green: #40e0d0;
+			--white: #ffffff;
+		}
+		
 		@keyframes float {
 			0%, 100% { transform: translateY(0px); }
 			50% { transform: translateY(-20px); }
 		}
 		
 		.footer__two-widget-about-social a:hover {
-			background: rgba(255,255,255,0.2) !important;
+			background: rgba(0, 128, 128, 0.2) !important;
 			transform: translateY(-2px);
 		}
 		
@@ -231,6 +242,7 @@
 						<div class="header__area-menubar-right-contact-info">
 							<span>Free contact 24/7</span>
 							<h6><a href="tel:+919802378786">+919802378786</a></h6>
+							<h6><a href="tel:+917027798023">+917027798023</a></h6>
 						</div>
 					</div>
 					<div class="header__area-menubar-right-btn four">						
@@ -461,7 +473,7 @@
 			<div class="row mb-50 align-items-end">
 				<div class="col-xl-12">
 					<div class="services__one-title t-center">
-						<span class="subtitle-one" style="color: #ff6b6b; font-weight: 600;">Premium Digital Solutions</span>
+						<span class="subtitle-one" style="color: #008080; font-weight: 600;">Premium Digital Solutions</span>
 						<h2 style="font-size: 3rem; font-weight: 700; margin-bottom: 20px;">Our Signature Services</h2>
 						<p style="font-size: 1.1rem; color: #666; max-width: 800px; margin: 0 auto;">Transform your business with our most sought-after digital marketing solutions. Each service is crafted to deliver exceptional results and drive real business growth.</p>
 					</div>
@@ -469,10 +481,10 @@
 			</div>
 			<div class="row">
 				<div class="col-xl-6 col-lg-6 col-md-6 mb-30">
-					<div class="services__one-item" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(102, 126, 234, 0.3); transform: translateY(0); transition: all 0.4s ease; position: relative;">
-						<div class="services__one-item-image" style="position: relative; overflow: hidden;">
-							<img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="meta-verified-api" style="width: 100%; height: 250px; object-fit: cover;">
-							<div style="position: absolute; top: 20px; right: 20px; background: linear-gradient(45deg, #ff6b6b, #ee5a24); color: white; padding: 8px 15px; border-radius: 25px; font-size: 12px; font-weight: 600; text-transform: uppercase;">Most Popular</div>
+					<div class="services__one-item" style="background: linear-gradient(135deg, #008080 0%, #20b2aa 100%); border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(0, 128, 128, 0.3); transform: translateY(0); transition: all 0.4s ease; position: relative; height: 100%; min-height: 520px;">
+						<div class="services__one-item-image" style="position: relative; overflow: hidden; height: 280px;">
+							<img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="WhatsApp Business API Meta Verified" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+							<div style="position: absolute; top: 20px; right: 20px; background: linear-gradient(45deg, #008080, #20b2aa); color: white; padding: 8px 15px; border-radius: 25px; font-size: 12px; font-weight: 600; text-transform: uppercase;">Most Popular</div>
 						</div>
 						<div class="services__one-item-content" style="padding: 30px; color: white;">
 							<div class="services__one-item-content-icon" style="background: rgba(255,255,255,0.2); width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
@@ -491,10 +503,10 @@
 				</div>
 				
 				<div class="col-xl-6 col-lg-6 col-md-6 mb-30">
-					<div class="services__one-item" style="background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%); border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(255, 107, 107, 0.3); transform: translateY(0); transition: all 0.4s ease; position: relative;">
-						<div class="services__one-item-image" style="position: relative; overflow: hidden;">
-							<img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="google-my-business" style="width: 100%; height: 250px; object-fit: cover;">
-							<div style="position: absolute; top: 20px; right: 20px; background: linear-gradient(45deg, #1e3c72, #2a5298); color: white; padding: 8px 15px; border-radius: 25px; font-size: 12px; font-weight: 600; text-transform: uppercase;">Certified</div>
+					<div class="services__one-item" style="background: linear-gradient(135deg, #008080 0%, #20b2aa 100%); border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(0, 128, 128, 0.3); transform: translateY(0); transition: all 0.4s ease; position: relative; height: 100%; min-height: 520px;">
+						<div class="services__one-item-image" style="position: relative; overflow: hidden; height: 280px;">
+							<img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="Google My Business Local SEO" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+							<div style="position: absolute; top: 20px; right: 20px; background: linear-gradient(45deg, #008080, #20b2aa); color: white; padding: 8px 15px; border-radius: 25px; font-size: 12px; font-weight: 600; text-transform: uppercase;">Certified</div>
 						</div>
 						<div class="services__one-item-content" style="padding: 30px; color: white;">
 							<div class="services__one-item-content-icon" style="background: rgba(255,255,255,0.2); width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
@@ -513,10 +525,10 @@
 				</div>
 				
 				<div class="col-xl-6 col-lg-6 col-md-6 mb-30">
-					<div class="services__one-item" style="background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #667eea 100%); border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(30, 60, 114, 0.3); transform: translateY(0); transition: all 0.4s ease; position: relative;">
-						<div class="services__one-item-image" style="position: relative; overflow: hidden;">
-							<img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="bulk-sms-marketing" style="width: 100%; height: 250px; object-fit: cover;">
-							<div style="position: absolute; top: 20px; right: 20px; background: linear-gradient(45deg, #ff6b6b, #ee5a24); color: white; padding: 8px 15px; border-radius: 25px; font-size: 12px; font-weight: 600; text-transform: uppercase;">High ROI</div>
+					<div class="services__one-item" style="background: linear-gradient(135deg, #008080 0%, #20b2aa 100%); border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(0, 128, 128, 0.3); transform: translateY(0); transition: all 0.4s ease; position: relative; height: 100%; min-height: 520px;">
+						<div class="services__one-item-image" style="position: relative; overflow: hidden; height: 280px;">
+							<img src="https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="Bulk SMS Marketing Mobile" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+							<div style="position: absolute; top: 20px; right: 20px; background: linear-gradient(45deg, #008080, #20b2aa); color: white; padding: 8px 15px; border-radius: 25px; font-size: 12px; font-weight: 600; text-transform: uppercase;">High ROI</div>
 						</div>
 						<div class="services__one-item-content" style="padding: 30px; color: white;">
 							<div class="services__one-item-content-icon" style="background: rgba(255,255,255,0.2); width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
@@ -535,10 +547,10 @@
 				</div>
 				
 				<div class="col-xl-6 col-lg-6 col-md-6 mb-30">
-					<div class="services__one-item" style="background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(17, 153, 142, 0.3); transform: translateY(0); transition: all 0.4s ease; position: relative;">
-						<div class="services__one-item-image" style="position: relative; overflow: hidden;">
-							<img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="web-development-services" style="width: 100%; height: 250px; object-fit: cover;">
-							<div style="position: absolute; top: 20px; right: 20px; background: linear-gradient(45deg, #667eea, #764ba2); color: white; padding: 8px 15px; border-radius: 25px; font-size: 12px; font-weight: 600; text-transform: uppercase;">Custom</div>
+					<div class="services__one-item" style="background: linear-gradient(135deg, #008080 0%, #20b2aa 100%); border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(0, 128, 128, 0.3); transform: translateY(0); transition: all 0.4s ease; position: relative; height: 100%; min-height: 520px;">
+						<div class="services__one-item-image" style="position: relative; overflow: hidden; height: 280px;">
+							<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="Web Development Coding" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+							<div style="position: absolute; top: 20px; right: 20px; background: linear-gradient(45deg, #008080, #20b2aa); color: white; padding: 8px 15px; border-radius: 25px; font-size: 12px; font-weight: 600; text-transform: uppercase;">Custom</div>
 						</div>
 						<div class="services__one-item-content" style="padding: 30px; color: white;">
 							<div class="services__one-item-content-icon" style="background: rgba(255,255,255,0.2); width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
@@ -560,7 +572,7 @@
 			<div class="row mt-50">
 				<div class="col-xl-12">
 					<div class="text-center">
-						<a href="services.html" class="btn-one" style="background: linear-gradient(45deg, #ff6b6b, #ee5a24); border: none; padding: 15px 40px; font-size: 1.1rem; font-weight: 600; border-radius: 50px; box-shadow: 0 10px 30px rgba(255, 107, 107, 0.3);">View All Services</a>
+						<a href="services.html" class="btn-one" style="background: linear-gradient(45deg, #008080, #20b2aa); border: none; padding: 15px 40px; font-size: 1.1rem; font-weight: 600; border-radius: 50px; box-shadow: 0 10px 30px rgba(0, 128, 128, 0.3);">View All Services</a>
 					</div>
 				</div>
 			</div>
@@ -830,6 +842,7 @@
 							<div class="footer__top-item-info-content">
 								<span style="font-weight: 600; font-size: 14px; line-height: 24px; color: white;">Free Consultation</span>
 								<h5 style="margin: 0;"><a href="tel:+919802378786" style="color: white; text-decoration: none;">+919802378786</a></h5>
+								<h5 style="margin: 0;"><a href="tel:+917027798023" style="color: white; text-decoration: none;">+917027798023</a></h5>
 							</div>
 						</div>
 					</div>
@@ -913,7 +926,7 @@
 							<p style="color: rgba(255,255,255,0.9); line-height: 1.6;">Stay updated with the latest digital marketing trends and tips</p>
 							<form action="#" style="position: relative;">
 								<input type="text" name="email" placeholder="Email Address" required="" style="width: 100%; padding: 12px 15px; border: none; border-radius: 25px; background: rgba(255,255,255,0.1); color: white; outline: none; margin-bottom: 10px; border: 1px solid rgba(255,255,255,0.2);">
-								<button type="submit" style="width: 100%; padding: 12px; border: none; border-radius: 25px; background: linear-gradient(45deg, #ff6b6b, #ee5a24); color: white; font-weight: 600; cursor: pointer; transition: all 0.3s ease;">
+								<button type="submit" style="width: 100%; padding: 12px; border: none; border-radius: 25px; background: linear-gradient(45deg, #008080, #20b2aa); color: white; font-weight: 600; cursor: pointer; transition: all 0.3s ease;">
 									<i class="fas fa-paper-plane" style="margin-right: 8px;"></i>Subscribe
 								</button>
 							</form>

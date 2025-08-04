@@ -1,9 +1,67 @@
- /* 3D Slider Container */
+ 
+
+/* Service Cards Responsive Styles */
+.services__one-item {
+    display: flex;
+    flex-direction: column;
+    height: 100% !important;
+    min-height: 520px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services__one-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 30px 60px rgba(0, 128, 128, 0.4) !important;
+}
+
+.services__one-item-image {
+    height: 280px !important;
+    flex-shrink: 0;
+}
+
+.services__one-item-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .services__one-item {
+        min-height: 480px;
+        margin-bottom: 30px;
+    }
+    
+    .services__one-item-image {
+        height: 220px !important;
+    }
+    
+    .services__one-item-content {
+        padding: 25px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .services__one-item {
+        min-height: 450px;
+    }
+    
+    .services__one-item-image {
+        height: 200px !important;
+    }
+    
+    .services__one-item-content {
+        padding: 20px !important;
+    }
+}
+
+/* 3D Slider Container */
         .banner-3d-slider {
             position: relative;
             height: 100vh;
             overflow: hidden;
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #667eea 100%);
+            background: var(--gradient-primary);
         }
 
         /* Swiper Container */
@@ -26,17 +84,17 @@
         /* Slide Background Images */
         .slide-1 {
             background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
-                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%231e3c72" width="1200" height="800"/><circle fill="%232a5298" cx="200" cy="200" r="100" opacity="0.3"/><circle fill="%23ff6b6b" cx="800" cy="400" r="150" opacity="0.2"/><circle fill="%23008080" cx="1000" cy="600" r="80" opacity="0.3"/></svg>');
+                        var(--gradient-primary);
         }
 
         .slide-2 {
             background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
-                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%23ff6b6b" width="1200" height="800"/><polygon fill="%23ee5a24" points="0,0 400,200 0,400" opacity="0.3"/><polygon fill="%23667eea" points="800,0 1200,0 1200,300" opacity="0.2"/><circle fill="%23008080" cx="600" cy="400" r="120" opacity="0.3"/></svg>');
+                        var(--gradient-accent);
         }
 
         .slide-3 {
             background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
-                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%23667eea" width="1200" height="800"/><rect fill="%232a5298" x="0" y="0" width="400" height="800" opacity="0.3"/><circle fill="%23ff6b6b" cx="900" cy="300" r="200" opacity="0.2"/><polygon fill="%23008080" points="600,800 1200,600 1200,800" opacity="0.3"/></svg>');
+                        var(--gradient-dark);
         }
 
         /* 3D Floating Elements */
@@ -148,8 +206,8 @@
             display: inline-block;
             padding: 15px 40px;
             margin: 0 10px;
-            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
-            color: white;
+            background: var(--gradient-accent);
+            color: var(--white);
             text-decoration: none;
             border-radius: 50px;
             font-weight: 600;
@@ -293,7 +351,63 @@
 
 
 
-/* */
+/* Logo-Based Unified Color Scheme Variables */
+:root {
+  /* Primary Brand Colors - Based on Logo */
+  --primary-teal: #008080;
+  --primary-accent: #ff6b6b;
+  
+  /* Supporting Colors */
+  --dark-teal: #006666;
+  --light-teal: #20b2aa;
+  --mint-green: #40e0d0;
+  
+  /* Neutral Colors */
+  --dark-gray: #2c3e50;
+  --light-gray: #ecf0f1;
+  --white: #ffffff;
+  --black: #000000;
+  
+  /* Original Color Variables - Updated to Teal Scheme */
+  --primary-color-1: #008080;  /* Main teal from logo */
+  --primary-color-2: #20b2aa;  /* Light teal */
+  --primary-color-3: #006666;  /* Dark teal */
+  --primary-color-4: #40e0d0;  /* Mint green accent */
+  
+  /* Additional Variables */
+  --text-white: #ffffff;
+  --text-heading-color: #2c3e50;
+  --body-color: #666666;
+  --bg-white: #ffffff;
+  --bg-heading-color: #2c3e50;
+  --border-color-1: #e5e5e5;
+  --border-color-2: #dddddd;
+  --border-color-3: #cccccc;
+  --border-color-4: #f0f0f0;
+  --color-1: #333333;
+  --color-2: #999999;
+  --color-3: #777777;
+  --color-4: #f8f9fa;
+  --color-5: #f1f8ff;
+  --color-9: #1a1a1a;
+  --color-10: #2a2a2a;
+  --color-16: #f5f5f5;
+  --color-18: #1e1e1e;
+  --color-21: #f9f9f9;
+  --color-22: #008080;
+  
+  /* Font Variables */
+  --heading-font: 'Outfit', sans-serif;
+  --body-font: 'Kumbh Sans', sans-serif;
+  
+  /* Gradient Combinations - Logo Inspired */
+  --gradient-primary: linear-gradient(135deg, var(--primary-teal) 0%, var(--light-teal) 100%);
+  --gradient-accent: linear-gradient(135deg, var(--primary-accent) 0%, var(--primary-teal) 100%);
+  --gradient-dark: linear-gradient(135deg, var(--dark-teal) 0%, var(--primary-teal) 100%);
+  --gradient-mint: linear-gradient(135deg, var(--mint-green) 0%, var(--primary-teal) 100%);
+}
+
+/* Font Imports */
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600;700;800&amp;display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&amp;display=swap");
 
@@ -837,10 +951,13 @@ h6 {
   --bg-white: #FFFFFF;
   --btn-white: #FFFFFF;
   --border-white: #FFFFFF;
-  --primary-color-1: #ff6b6b;
-  --primary-color-4: #ff6b6b;
-  --primary-color-2: #1e3c72;
-  --primary-color-3: #008080;
+  
+  /* Updated to Teal Logo Color Scheme */
+  --primary-color-1: #008080;  /* Main teal from logo */
+  --primary-color-2: #20b2aa;  /* Light teal */
+  --primary-color-3: #006666;  /* Dark teal */
+  --primary-color-4: #40e0d0;  /* Mint green accent */
+  
   --bg-heading-color: #121212;
   --text-heading-color: #121212;
   --btn-heading-color: #121212;
@@ -868,14 +985,19 @@ h6 {
   --color-19: #2D2E30;
   --color-20: #ececec;
   --color-21: #2D2F34;
-  --color-22: #424448;
+  --color-22: #008080;  /* Updated to teal */
   --color-23: #57595D;
   --color-24: #56b982;
-  --accent-color-1: #ee5a24;
-  --accent-color-2: #2a5298;
-  --accent-color-3: #667eea;
-  --gradient-primary: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
-  --gradient-secondary: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #667eea 100%);
+  
+  /* Updated Accent Colors to Teal Scheme */
+  --accent-color-1: #ff6b6b;  /* Keep coral for contrast */
+  --accent-color-2: #20b2aa;  /* Light teal */
+  --accent-color-3: #40e0d0;  /* Mint green */
+  
+  /* Updated Gradients to Teal Scheme */
+  --gradient-primary: linear-gradient(135deg, #008080 0%, #20b2aa 100%);
+  --gradient-secondary: linear-gradient(135deg, #006666 0%, #008080 50%, #40e0d0 100%);
+  
   --border-color-1: #E6E6E6;
   --border-color-2: #F0F0F0;
   --border-color-3: rgba(255, 255, 255, 0.1);
@@ -4101,7 +4223,7 @@ h6 {
   display: block;
 }
 .header__area.one {
-  background: #FFF8F8;
+  background: #FFFFFF;
   border-bottom: 1px solid rgba(224, 224, 224, 0.5);
 }
 

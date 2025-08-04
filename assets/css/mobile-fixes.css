@@ -1,0 +1,25 @@
+/* Global Mobile View Fixes for 1Roof Ads */
+
+/* Smooth scrolling for all pages */
+html {
+	scroll-behavior: smooth;
+}
+
+/* Enhanced smooth scrolling for mobile */
+@media (max-width: 1050px) {
+	/* Hide top bar on mobile view for all pages */
+	.top__bar-four {
+		display: none !important;
+	}
+	
+	/* Enhanced smooth scrolling for mobile devices */
+	body {
+		-webkit-overflow-scrolling: touch;
+		scroll-behavior: smooth;
+	}
+	
+	/* Smooth scroll for all scrollable elements */
+	* {
+		scroll-behavior: smooth;
+	}
+}
