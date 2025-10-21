@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RCS Business Messaging | 1Roof Ads</title>
+    <meta name="description" content="Upgrade your business communication with RCS (Rich Communication Services) by 1 Roof Ads. Send rich media, interactive messages, and boost customer engagement.">
+    <meta name="keywords" content="RCS messaging, Rich Communication Services, business messaging, RCS marketing, RCS API, rich media messaging">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/img/logo-2.png">
+    
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #2563eb;
+            --secondary: #1e40af;
+            --accent: #f59e0b;
+            --light: #f8fafc;
+            --dark: #1e293b;
+            --gradient: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #334155;
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+        
+        /* Header */
+        .navbar {
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            background: white !important;
+        }
+        
+        .navbar-brand img {
+            height: 40px;
+        }
+        
+        .nav-link {
+            font-weight: 500;
+            color: var(--dark) !important;
+            margin: 0 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            color: var(--primary) !important;
+        }
+        
+        .btn-primary {
+            background: var(--gradient);
+            border: none;
+            padding: 10px 25px;
+            border-radius: 50px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(37, 99, 235, 0.2);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: var(--gradient);
+            color: white;
+            padding: 100px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+            max-width: 600px;
+        }
+        
+        .hero-img {
+            position: relative;
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        /* Features */
+        .features {
+            padding: 100px 0;
+            background: #f8fafc;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title h2:after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 4px;
+            background: var(--accent);
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+        
+        .feature-card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            height: 100%;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+        }
+        
+        .feature-icon {
+            width: 70px;
+            height: 70px;
+            background: rgba(37, 99, 235, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            color: var(--primary);
+            font-size: 30px;
+        }
+        
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+        
+        /* How It Works */
+        .how-it-works {
+            padding: 100px 0;
+            background: white;
+        }
+        
+        .step {
+            text-align: center;
+            padding: 0 20px;
+            position: relative;
+        }
+        
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: 700;
+            margin: 0 auto 20px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .step h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+        
+        /* CTA Section */
+        .cta {
+            padding: 100px 0;
+            background: var(--gradient);
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+        
+        .cta p {
+            font-size: 1.25rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            opacity: 0.9;
+        }
+        
+        .btn-light {
+            background: white;
+            color: var(--primary);
+            font-weight: 500;
+            padding: 12px 30px;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-light:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        /* FAQ Section */
+        .faq {
+            padding: 100px 0;
+            background: #f8fafc;
+        }
+        
+        .accordion-button:not(.collapsed) {
+            background: rgba(37, 99, 235, 0.05);
+            color: var(--primary);
+        }
+        
+        .accordion-button:focus {
+            box-shadow: none;
+            border-color: rgba(37, 99, 235, 0.2);
+        }
+        
+        .accordion-button:not(.collapsed)::after {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%232563eb'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+        }
+        
+        /* Footer */
+        .footer {
+            background: var(--dark);
+            color: #94a3b8;
+            padding: 80px 0 0;
+        }
+        
+        .footer h5 {
+            color: white;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+        
+        .footer ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer a {
+            color: #94a3b8;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .footer a:hover {
+            color: white;
+            padding-left: 5px;
+        }
+        
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            margin-right: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            background: var(--primary);
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            background: rgba(0,0,0,0.2);
+            padding: 20px 0;
+            margin-top: 50px;
+            font-size: 14px;
+        }
+        
+        /* Responsive */
+        @media (max-width: 991px) {
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+            
+            .section-title h2 {
+                font-size: 2.2rem;
+            }
+        }
+        
+        @media (max-width: 767px) {
+            .hero {
+                text-align: center;
+                padding: 80px 0;
+            }
+            
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            
+            .section-title h2 {
+                font-size: 2rem;
+            }
+            
+            .feature-card {
+                margin-bottom: 20px;
+            }
+        }
+        
+        @media (max-width: 575px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .cta h2 {
+                font-size: 2rem;
+            }
+            
+            .section-title h2 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/logo-2.png" alt="1Roof Ads">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="companyDropdown" role="button" data-bs-toggle="dropdown">
+                                Company
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="meta-api.html">Meta Verified API</a></li>
+                                <li><a class="dropdown-item" href="gmb.html">Google My Business</a></li>
+                                <li><a class="dropdown-item" href="development.html">Design & Development</a></li>
+                                <li><a class="dropdown-item" href="smo.html">Social Media Marketing</a></li>
+                                <li><a class="dropdown-item" href="seo.html">SEO</a></li>
+                                <li><a class="dropdown-item" href="googleads.html">Google Ads</a></li>
+                                <li><a class="dropdown-item" href="sms.html">Bulk SMS</a></li>
+                                <li><a class="dropdown-item" href="voc.html">Voice Over Video</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                            <a href="request-quote.html" class="btn btn-primary">Get a Quote</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1>Transform Your Business Communication with RCS</h1>
+                    <p>Deliver rich, interactive messages that engage customers and drive results with Rich Communication Services (RCS) from 1 Roof Ads.</p>
+                    <a href="#contact" class="btn btn-light btn-lg me-3">Get Started</a>
+                    <a href="#features" class="btn btn-outline-light btn-lg">Learn More</a>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://www.rcs.insidermonkey.com/blog/wp-content/uploads/2023/07/What-Is-RCS-Messaging-A-Complete-Guide.png" alt="RCS Messaging" class="img-fluid hero-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose RCS Messaging?</h2>
+                <p class="lead">Upgrade your customer communication with these powerful RCS features</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-images"></i>
+                        </div>
+                        <h3>Rich Media Content</h3>
+                        <p>Send high-quality images, videos, GIFs, and audio files to create engaging, visually appealing messages that capture attention.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-mouse-pointer"></i>
+                        </div>
+                        <h3>Interactive Buttons</h3>
+                        <p>Include clickable call-to-action buttons that make it easy for customers to respond, book, buy, or learn more with just one tap.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Higher Engagement</h3>
+                        <p>Experience up to 5x higher engagement rates compared to traditional SMS, with read receipts and typing indicators.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Secure & Verified</h3>
+                        <p>Built-in authentication ensures your messages are delivered securely and recognized as coming from your verified business.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3>Seamless Commerce</h3>
+                        <p>Enable in-chat purchases, appointment scheduling, and other transactions without leaving the messaging app.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <h3>Advanced Analytics</h3>
+                        <p>Track delivery, read receipts, and engagement metrics to optimize your messaging strategy and ROI.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-title">
+                <h2>How It Works</h2>
+                <p class="lead">Get started with RCS messaging in just a few simple steps</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>Connect</h3>
+                        <p>Our team sets up your RCS business profile and integrates it with your existing systems.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>Create</h3>
+                        <p>Design rich, interactive message templates tailored to your business needs.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>Engage</h3>
+                        <p>Start sending messages and watch your customer engagement soar.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Transform Your Business Communication?</h2>
+            <p>Join leading businesses that are already using RCS to connect with their customers in more meaningful ways.</p>
+            <a href="contact.html" class="btn btn-light btn-lg">Get Your Free Consultation</a>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <p class="lead">Everything you need to know about RCS Business Messaging</p>
+            </div>
+            
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item mb-3">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                            What is RCS messaging?
+                        </button>
+                    </h3>
+                    <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            <p>Rich Communication Services (RCS) is the next generation of SMS that allows businesses to send rich media, interactive messages, and provide a more engaging experience than traditional text messages.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item mb-3">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                            How is RCS different from SMS?
+                        </button>
+                    </h3>
+                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            <p>Unlike SMS, RCS supports rich media (images, videos, buttons), read receipts, typing indicators, and interactive elements, providing a more engaging and app-like experience within the native messaging app.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item mb-3">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                            Which devices support RCS?
+                        </button>
+                    </h3>
+                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            <p>RCS is supported on most Android devices through Google Messages and is being adopted by carriers worldwide. It's automatically available on most new Android smartphones.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item mb-3">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                            How much does RCS messaging cost?
+                        </button>
+                    </h3>
+                    <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            <p>Pricing varies based on volume and features. Contact us for a customized quote based on your business needs and expected message volume.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                            How do I get started with RCS for my business?
+                        </button>
+                    </h3>
+                    <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            <p>Getting started is easy! Simply contact our team, and we'll guide you through the setup process, including business verification, message template approval, and system integration.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact py-5 bg-light" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="mb-4">Get In Touch</h2>
+                    <p class="mb-4">Have questions about RCS messaging for your business? Our team is here to help!</p>
+                    
+                    <div class="mb-4">
+                        <h5><i class="fas fa-phone-alt me-2"></i> Call Us</h5>
+                        <p class="ms-4">+91 98023 78786<br>+91 70277 98023</p>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h5><i class="fas fa-envelope me-2"></i> Email Us</h5>
+                        <p class="ms-4"><a href="mailto:1roofadsindia@gmail.com">1roofadsindia@gmail.com</a></p>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h5><i class="fas fa-map-marker-alt me-2"></i> Visit Us</h5>
+                        <p class="ms-4">Chandigarh City Center, Vip Road,<br>Zirakpur, PINCODE 140603</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="card shadow">
+                        <div class="card-body p-4">
+                            <h3 class="mb-4">Send Us a Message</h3>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Your Name</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="phone" class="form-label">Phone Number</label>
+                                    <input type="tel" class="form-control" id="phone">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Your Message</label>
+                                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <img src="assets/img/logo-2.png" alt="1Roof Ads" class="mb-3" style="height: 40px;">
+                    <p>Your complete digital marketing partner, helping businesses grow with innovative solutions and cutting-edge technology.</p>
+                    <div class="social-links mt-4">
+                        <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-5">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h5>Our Services</h5>
+                    <ul>
+                        <li><a href="meta-api.html">Meta Verified API</a></li>
+                        <li><a href="gmb.html">Google My Business</a></li>
+                        <li><a href="development.html">Web Development</a></li>
+                        <li><a href="smo.html">Social Media Marketing</a></li>
+                        <li><a href="seo.html">Search Engine Optimization</a></li>
+                        <li><a href="googleads.html">Google Ads</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h5>Contact Info</h5>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt me-2"></i> Chandigarh City Center, Vip Road, Zirakpur, PINCODE 140603</li>
+                        <li><i class="fas fa-phone-alt me-2"></i> +91 98023 78786</li>
+                        <li><i class="fas fa-envelope me-2"></i> 1roofadsindia@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="mb-0">&copy; 2023 1Roof Ads. All Rights Reserved. | <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-conditions.html">Terms & Conditions</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Back to Top Button
+        const backToTop = document.querySelector('.back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTop.classList.add('show');
+            } else {
+                backToTop.classList.remove('show');
+            }
+        });
+        
+        backToTop.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Navbar background on scroll
+        const navbar = document.querySelector('.navbar');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('shadow-sm');
+                navbar.style.padding = '10px 0';
+            } else {
+                navbar.classList.remove('shadow-sm');
+                navbar.style.padding = '15px 0';
+            }
+        });
+    </script>
+</body>
+</html>
