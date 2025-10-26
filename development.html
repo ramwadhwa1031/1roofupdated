@@ -119,108 +119,392 @@
 	<!-- Preloader End -->
 	
 	<!-- Top Bar Area Start -->
-	<div class="top__bar-four">
-		<div class="custom__container">
-			<div class="row">
+	<div class="top__bar-four py-2 d-none d-lg-block" style="background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);">
+		<div class="container">
+			<div class="row align-items-center">
 				<div class="col-lg-8">
-					<div class="top__bar-four-left lg-t-center">
-						<ul>
-							<li><a href="https://www.google.com/maps" target="_blank"><i class="fas fa-map-marker-alt"></i>Location : Chandigarh City Center, Vip Road ,ZIRAKPUR, PINCODE 140603</a></li>
-							<li><a href="mailto:1roofadsindia@gmail.com"><i class="fas fa-envelope"></i>Email : 1roofadsindia@gmail.com</a></li>
-						</ul>
+					<div class="d-flex flex-wrap gap-4 align-items-center">
+						<a href="https://www.google.com/maps" target="_blank" class="text-decoration-none text-white d-flex align-items-center">
+							<i class="fas fa-map-marker-alt me-2" style="color: #00d4ff;"></i>
+							<small style="font-size: 0.85rem;">Location : Chandigarh City Center, Vip Road ,ZIRAKPUR, PINCODE 140603</small>
+						</a>
+						<a href="mailto:1roofadsindia@gmail.com" class="text-decoration-none text-white d-flex align-items-center">
+							<i class="fas fa-envelope me-2" style="color: #00d4ff;"></i>
+							<small style="font-size: 0.85rem;">Email : 1roofadsindia@gmail.com</small>
+						</a>
 					</div>
 				</div>
 				<div class="col-lg-4">
-					<div class="top__bar-four-right">
-						<h6>Follow Us :</h6>
-						<div class="top__bar-four-right-social">
-							<ul>
-																<li><a href="https://www.facebook.com/profile.php?id=100093546087763" target="_blank"><i class="fab fa-facebook-f"></i><span>Facebook</span></a></li>
-								<li><a href="https://instagram.com/1roofads_com?igshid=NTc4MTIwNjQ2YQ==" target="_blank"><i class="fab fa-instagram"></i><span>Instagram</span></a></li>
-									</ul>
-						</div>
+					<div class="d-flex align-items-center justify-content-end gap-3">
+						<small class="text-white fw-normal">Follow Us :</small>
+						<a href="https://www.facebook.com/profile.php?id=100093546087763" target="_blank" 
+						   class="text-white text-decoration-none d-flex align-items-center justify-content-center" 
+						   style="width: 30px; height: 30px; transition: all 0.3s ease;">
+							<i class="fab fa-facebook-f" style="font-size: 0.95rem;"></i>
+						</a>
+						<a href="https://instagram.com/1roofads_com?igshid=NTc4MTIwNjQ2YQ==" target="_blank" 
+						   class="text-white text-decoration-none d-flex align-items-center justify-content-center" 
+						   style="width: 30px; height: 30px; transition: all 0.3s ease;">
+							<i class="fab fa-instagram" style="font-size: 0.95rem;"></i>
+						</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 	<!-- Top Bar Area End -->
-	<!-- Header Area Start -->
-	<div class="header__area one header__sticky">
-        <div class="container custom__container">
-            <div class="header__area-menubar p-relative">
-                <div class="header__area-menubar-left">
-                    <div class="header__area-menubar-left-logo">
-                        <a href="index.html"><img class="dark-n" src="assets/img/logo-2.png" alt="Logo-image"></a>
-                    </div>
-                </div>
-				<div class="header__area-menubar-center">
-                    <div class="header__area-menubar-center-menu four menu-responsive">						
-                        <ul id="mobilemenu">
-							<li><a href="index.html">Home</a></li>
-							
-							  <li class="menu-item-has-children"><a href="#">Company</a>
-                                <ul class="sub-menu">
-                                    <li><a href="about.html">About Us</a></li>
-                                    <!-- <li><a href="pricing.html">Price Plans</a></li>
-                                    <li><a href="faq.html">FAQ's</a></li>
-                                    <li><a href="testimonial.html">Testimonials</a></li>
-									<li><a href="request-quote.html">Request Quote</a></li>
-                                    <li><a href="404-error.html">404 Page</a></li> -->
-                                </ul>
-                            </li>
-							<li class="menu-item-has-children"><a href="services.html">Services</a>
-								<ul class="sub-menu">
-									<li><a href="meta-api.html">Meta Verified API</a></li>
-									<li><a href="rcs.html">RCS Messaging</a></li>
-									<li><a href="gmb.html">Google My Business</a></li>
-									<li><a href="development.html">Design & Development</a></li>
-									<li><a href="smo.html">Social Media Marketing</a></li>
-									<li><a href="seo.html">SEO</a></li>
-									<li><a href="googleads.html">Google Ads</a></li>
-                                    <li><a href="sms.html">Bulk SMS</a></li>
-									<li><a href="voc.html">Voice Over Video</a></li>
-								</ul>
-							</li>
-							<li><a href="contact.html">Contact</a></li>
-                            
-                             </ul>
-                    </div>
+	
+	<!-- Header Area Start with Bootstrap 5 -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top py-3">
+		<div class="container">
+			<!-- Logo -->
+			<a class="navbar-brand m-0 p-0" href="index.html">
+				<img src="assets/img/logo-2.png" alt="1Roof Ads Logo" class="img-fluid" 
+					 style="height: 50px; max-height: 50px; width: auto; object-fit: contain;">
+			</a>
+			
+			<!-- Mobile Toggle Button -->
+			<button class="navbar-toggler border-0 shadow-none p-2" type="button" data-bs-toggle="collapse" 
+					data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<!-- Navigation Menu -->
+			<div class="collapse navbar-collapse" id="navbarMain">
+				<ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+					<!-- Home -->
+					<li class="nav-item">
+						<a class="nav-link fw-semibold px-3" href="index.html" style="color: #2c3e50;">Home</a>
+					</li>
+					
+					<!-- Company Dropdown -->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle fw-semibold px-3" href="#" id="companyDropdown" 
+						   role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #2c3e50;">
+							Company
+						</a>
+						<ul class="dropdown-menu border-0 shadow-sm" aria-labelledby="companyDropdown">
+							<li><a class="dropdown-item" href="about.html">About Us</a></li>
+						</ul>
+					</li>
+					
+					<!-- Services Dropdown -->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle fw-semibold px-3" href="services.html" id="servicesDropdown" 
+						   role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #2c3e50;">
+							Services
+						</a>
+						<ul class="dropdown-menu border-0 shadow-sm" aria-labelledby="servicesDropdown">
+							<li><a class="dropdown-item" href="meta-api.html">Meta Verified API</a></li>
+							<li><a class="dropdown-item" href="rcs.html">RCS Messaging</a></li>
+							<li><a class="dropdown-item" href="gmb.html">Google My Business</a></li>
+							<li><a class="dropdown-item" href="development.html">Design & Development</a></li>
+							<li><a class="dropdown-item" href="smo.html">Social Media Marketing</a></li>
+							<li><a class="dropdown-item" href="seo.html">SEO</a></li>
+							<li><a class="dropdown-item" href="googleads.html">Google Ads</a></li>
+							<li><a class="dropdown-item" href="sms.html">Bulk SMS</a></li>
+							<li><a class="dropdown-item" href="voc.html">Voice Over Video</a></li>
+						</ul>
+					</li>
+					
+					<!-- Contact -->
+					<li class="nav-item">
+						<a class="nav-link fw-semibold px-3" href="contact.html" style="color: #2c3e50;">Contact</a>
+					</li>
+				</ul>
+				
+				<!-- Right Side Elements -->
+				<div class="d-flex align-items-center gap-3 flex-wrap justify-content-center justify-content-lg-start">
+					<!-- Search Icon -->
+					<button class="btn btn-link text-dark p-2 d-none d-lg-block" style="font-size: 1.2rem;">
+						<i class="fas fa-search"></i>
+					</button>
+					
+					<!-- Contact Info - Desktop Only -->
+					<div class="d-none d-xl-flex align-items-center gap-3">
+						<div class="text-end">
+							<small class="d-block text-muted" style="font-size: 0.75rem;">Free contact 24/7</small>
+							<a href="tel:+919802378786" class="d-block text-decoration-none fw-bold" style="font-size: 0.95rem; color: #2c3e50;">+919802378786</a>
+							<a href="tel:+917027798023" class="d-block text-decoration-none fw-bold" style="font-size: 0.95rem; color: #2c3e50;">+917027798023</a>
+						</div>
+						<div class="rounded-circle d-flex align-items-center justify-content-center" 
+							 style="width: 50px; height: 50px; background: linear-gradient(135deg, #00d4ff 0%, #00a8cc 100%);">
+							<i class="fas fa-phone-alt text-white" style="font-size: 1.1rem;"></i>
+						</div>
+					</div>
+					
+					<!-- Quote Button -->
+					<a href="request-quote.html" class="btn px-4 py-2 fw-semibold text-white" 
+					   style="background: linear-gradient(135deg, #00d4ff 0%, #00a8cc 100%); border: none; border-radius: 8px; transition: all 0.3s ease;">
+						Quote Now
+					</a>
 				</div>
-                <div class="header__area-menubar-right">
-					<div class="header__area-menubar-right-search four">
-						<div class="search">	
-							<span class="header__area-menubar-right-search-icon open"><i class="fal fa-search"></i></span>
-						</div>
-						<div class="header__area-menubar-right-search-box">
-							<form>
-								<input type="search" placeholder="Search Here.....">
-								<button type="submit"><i class="fal fa-search"></i>
-								</button>
-							</form> 
-							<span class="header__area-menubar-right-search-box-icon"><i class="fal fa-times"></i></span>
-						</div>
-					</div>
-					<div class="header__area-menubar-right-responsive-menu menu__bar two">
-						<i class="flaticon-dots-menu"></i>
-					</div>
-					<div class="header__area-menubar-right-contact">
-						<div class="header__area-menubar-right-contact-icon">
-							<i class="flaticon-phone-call"></i>
-						</div>
-						<div class="header__area-menubar-right-contact-info">
-							<span>Free contact 24/7</span>
-							<h6><a href="tel:+919802378786">+919802378786</a></h6>
-							<h6><a href="tel:+917027798023">+917027798023</a></h6>
-						</div>
-					</div>
-					<div class="header__area-menubar-right-btn four">						
-						<a class="btn-one" href="request-quote.html">Quote Now</a>
-					</div>
-                </div>
-            </div>
-			  </div>
-    </div>    
+			</div>
+		</div>
+	</nav>
+	
+	<!-- Mobile Contact Bar (Fixed Bottom) -->
+	<div class="d-lg-none fixed-bottom bg-white border-top shadow-lg py-2">
+		<div class="container">
+			<div class="row g-2 text-center">
+				<div class="col-4">
+					<a href="tel:+919802378786" class="text-decoration-none text-primary">
+						<i class="fas fa-phone-alt d-block fs-5 mb-1"></i>
+						<small class="d-block" style="font-size: 0.7rem;">Call Now</small>
+					</a>
+				</div>
+				<div class="col-4">
+					<a href="https://wa.me/919802378786" class="text-decoration-none text-success">
+						<i class="fab fa-whatsapp d-block fs-4 mb-1"></i>
+						<small class="d-block" style="font-size: 0.7rem;">WhatsApp</small>
+					</a>
+				</div>
+				<div class="col-4">
+					<a href="request-quote.html" class="btn btn-primary btn-sm w-100 py-2 rounded">
+						<small class="fw-semibold">Get Quote</small>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Header Area End -->
+	
+	<!-- Custom Navbar Styling -->
+	<style>
+		/* Top Bar Hover Effects */
+		.top__bar-four a:hover {
+			opacity: 0.8;
+		}
+		
+		.top__bar-four a i {
+			transition: transform 0.3s ease;
+		}
+		
+		.top__bar-four a:hover i {
+			transform: scale(1.1);
+		}
+		
+		/* Logo Styling */
+		.navbar-brand {
+			display: flex;
+			align-items: center;
+			transition: all 0.3s ease;
+		}
+		
+		.navbar-brand img {
+			transition: transform 0.3s ease;
+		}
+		
+		.navbar-brand:hover img {
+			transform: scale(1.05);
+		}
+		
+		/* Navbar Responsive Adjustments */
+		.navbar {
+			padding-top: 1rem !important;
+			padding-bottom: 1rem !important;
+		}
+		
+		/* Mobile Logo Adjustments */
+		@media (max-width: 991.98px) {
+			.navbar-brand img {
+				height: 40px !important;
+				max-height: 40px !important;
+			}
+			
+			.navbar {
+				padding-top: 0.75rem !important;
+				padding-bottom: 0.75rem !important;
+			}
+			
+			.navbar-collapse {
+				margin-top: 1rem;
+			}
+		}
+		
+		/* Desktop Logo Adjustments */
+		@media (min-width: 992px) {
+			.navbar-brand img {
+				height: 50px !important;
+				max-height: 50px !important;
+			}
+		}
+		
+		/* Extra Large Screens */
+		@media (min-width: 1200px) {
+			.navbar-brand img {
+				height: 55px !important;
+				max-height: 55px !important;
+			}
+		}
+		
+		/* Navbar Scroll Effect */
+		.navbar.scrolled {
+			box-shadow: 0 2px 20px rgba(0, 0, 0, 0.15) !important;
+			padding-top: 0.5rem !important;
+			padding-bottom: 0.5rem !important;
+		}
+		
+		.navbar.scrolled .navbar-brand img {
+			height: 40px !important;
+			max-height: 40px !important;
+		}
+		
+		/* Mobile Bottom Bar Spacing */
+		@media (max-width: 991.98px) {
+			body {
+				padding-bottom: 70px;
+			}
+		}
+		
+		/* Dropdown Menu Enhancements */
+		.dropdown-menu {
+			border-radius: 8px;
+			margin-top: 0.5rem;
+			border: 1px solid rgba(0, 0, 0, 0.05);
+		}
+		
+		.dropdown-item {
+			padding: 0.6rem 1.2rem;
+			transition: all 0.2s ease;
+			color: #2c3e50;
+		}
+		
+		.dropdown-item:hover {
+			background: linear-gradient(135deg, rgba(0, 212, 255, 0.1) 0%, rgba(0, 168, 204, 0.1) 100%);
+			padding-left: 1.5rem;
+			color: #00a8cc;
+		}
+		
+		/* Nav Link Hover Effects */
+		.nav-link {
+			position: relative;
+			transition: all 0.3s ease;
+		}
+		
+		.nav-link:hover {
+			color: #00a8cc !important;
+		}
+		
+		.nav-link::after {
+			content: '';
+			position: absolute;
+			width: 0;
+			height: 3px;
+			bottom: -5px;
+			left: 50%;
+			background: linear-gradient(135deg, #00d4ff 0%, #00a8cc 100%);
+			transition: all 0.3s ease;
+			transform: translateX(-50%);
+			border-radius: 2px;
+		}
+		
+		.nav-link:hover::after {
+			width: 80%;
+		}
+		
+		/* Active Link */
+		.nav-link.active {
+			color: #00a8cc !important;
+			font-weight: 600 !important;
+		}
+		
+		.nav-link.active::after {
+			width: 80%;
+		}
+		
+		/* Quote Button Hover Effects */
+		.btn:has(.text-white):hover {
+			transform: translateY(-2px);
+			box-shadow: 0 6px 20px rgba(0, 212, 255, 0.4);
+			background: linear-gradient(135deg, #00a8cc 0%, #0088aa 100%) !important;
+		}
+		
+		/* Search Button Hover */
+		.btn-link:hover {
+			color: #00a8cc !important;
+		}
+		
+		/* Phone Icon Circle Hover */
+		.rounded-circle:has(.fa-phone-alt):hover {
+			transform: scale(1.05);
+			box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+		}
+	</style>
+	
+	<!-- Navbar Scroll Script -->
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			const navbar = document.querySelector('.navbar');
+			const navbarCollapse = document.querySelector('.navbar-collapse');
+			
+			// Add scroll effect
+			window.addEventListener('scroll', function() {
+				if (window.scrollY > 50) {
+					navbar.classList.add('scrolled');
+				} else {
+					navbar.classList.remove('scrolled');
+				}
+			});
+			
+			// Close mobile menu ONLY when clicking on dropdown items (not nav links)
+			const dropdownItems = document.querySelectorAll('.dropdown-item');
+			
+			dropdownItems.forEach(item => {
+				item.addEventListener('click', function(e) {
+					// Only close if we're in mobile view
+					if (window.innerWidth < 992) {
+						// Close the navbar after a short delay to allow navigation
+						setTimeout(() => {
+							const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse) || new bootstrap.Collapse(navbarCollapse, {toggle: false});
+							bsCollapse.hide();
+						}, 100);
+					}
+				});
+			});
+			
+			// Close mobile menu when clicking on regular nav links (Home, Contact)
+			const regularNavLinks = document.querySelectorAll('.nav-link:not(.dropdown-toggle)');
+			
+			regularNavLinks.forEach(link => {
+				link.addEventListener('click', function(e) {
+					if (window.innerWidth < 992) {
+						setTimeout(() => {
+							const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse) || new bootstrap.Collapse(navbarCollapse, {toggle: false});
+							bsCollapse.hide();
+						}, 100);
+					}
+				});
+			});
+			
+			// Set active link based on current page
+			const currentLocation = window.location.pathname;
+			const currentPage = currentLocation.split('/').pop() || 'index.html';
+			
+			document.querySelectorAll('.nav-link').forEach(link => {
+				const href = link.getAttribute('href');
+				if (href === currentPage) {
+					link.classList.add('active');
+				}
+			});
+			
+			// Also highlight dropdown items
+			document.querySelectorAll('.dropdown-item').forEach(item => {
+				const href = item.getAttribute('href');
+				if (href === currentPage) {
+					item.classList.add('active');
+					// Also highlight parent dropdown
+					const parentDropdown = item.closest('.dropdown');
+					if (parentDropdown) {
+						const dropdownToggle = parentDropdown.querySelector('.dropdown-toggle');
+						if (dropdownToggle) {
+							dropdownToggle.classList.add('active');
+						}
+					}
+				}
+			});
+		});
+	</script>
 	<!-- Header Area End -->
 	<!-- Page Banner Area Start -->
     <div class="page__banner">
@@ -247,17 +531,20 @@
                         <div class="all__sidebar-item">
                             <h4>Our Solutions</h4>
                             <div class="all__sidebar-item-solution">
-                                <ul>
+                               <ul>
+									<li><a href="rcs.html">RCS Messaging</a></li>
                                     <li><a class="active" href="development.html">Web & App Development</a></li>
-                                    <li><a href="smo.html">Social Media Marketing</span></a></li>
+                                    <li><a href="smo.html">Social Media Marketing</a></li>
                                     <li><a href="seo.html">SEO</a></li>
                                     <li><a href="sms.html">Bulk SMS</a></li>
                                     <li><a href="googleads.html">Google Ads</a></li>
-                                    <li><a href="vov.html">Voice Over Video</a></li>
+                                    <li><a href="voc.html">Voice Over Video</a></li>
+                                    <li><a  href="meta-api.html">Meta Verified API</a></li>
+                                    <li><a href="gmb.html">Google My Business</a></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="all__sidebar-item">
+                        <!-- <div class="all__sidebar-item">
                             <h4>Company Profile</h4>
                             <div class="all__sidebar-item-download">
                                 <ul>
@@ -265,7 +552,7 @@
                                     <li><a href="#"><div><i class="flaticon-pdf-file"></i>Download Pdf</div><span class="fal fa-arrow-to-bottom"></span></a></li>
                                 </ul>                            
                             </div>
-                        </div>
+                        </div> -->
                         <div class="all__sidebar-item-help" data-background="assets/img/pages/support.jpg">
 							<img class="all__sidebar-item-help-shape" src="assets/img/shape/support.png" alt="">
                             <h4>Request a Free Call in Today !</h4>
@@ -274,6 +561,7 @@
                                 <div class="all__sidebar-item-help-contact-content">
                                     <span>Quick Help</span>
                                     <h6><a href="tel:+919802378786">+919802378786</a></h6>
+									<h6><a href="tel:+917027798023">+917027798023</a></h6>
                                 </div>
                             </div>
                         </div>
